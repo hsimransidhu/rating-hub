@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(to bottom, #4E73DF, #945AD1);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.star-container div {
+  transition: all 0.15s ease-in-out;
+}
+
+.container h1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+}
+
+.nothing {
+  color: #d3d3d3;
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.stars {
+  color: #FFD700; /* Set the color to gold */
+  animation: shine 2s infinite;
+  font-size: 80px;
+  cursor: pointer;
+}
+@keyframes shine {
+  0% { color: #FFD700; }
+  50% { color: #FFEC8B; }
+  100% { color: #FFD700; }
+}
+
+button {
+  display: block;
+  height: 34px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-right: 50px;
+  margin-left: auto;
+ justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.open {
+  background-color: rgb(39, 30, 89);
+
+}
+
+dialog {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: none;
+}
+.image-container {
+  padding:  0;
+  height: auto;
+  width: 500px;
+}
+ 
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.close-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
